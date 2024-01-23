@@ -16,7 +16,7 @@ int main()
         {
             scanf("%d", element+i);
         }
-        printf("1. Bubble Sort\n2. Insertion Sort\n3. Selection Sort\n4. Merge Sort\n5. Quick Sort\n");
+        printf("1. Bubble Sort\n2. Insertion Sort\n3. Selection Sort\n4. Quick Sort\n5. Merge Sort\n");
         printf("Select option to sort in which technique : ");
         scanf(" %d", &option);
         switch (option)
@@ -34,6 +34,11 @@ int main()
             case 3:
             {
                 selection_sort(element, size);
+                break;
+            }
+            case 4:
+            {
+                quick_sort(element, 0, size-1);
                 break;
             }
         }
